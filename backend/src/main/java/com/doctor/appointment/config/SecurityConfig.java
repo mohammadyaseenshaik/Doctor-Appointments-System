@@ -54,6 +54,7 @@ public class SecurityConfig {
                 // ===== Public endpoints =====
                 .requestMatchers("/auth/**").permitAll()
                 .requestMatchers(HttpMethod.GET, "/doctors", "/doctors/**").permitAll()
+                .requestMatchers("/actuator/**").permitAll()
 
                 // Allow H2 console access (development only)
                 .requestMatchers("/h2-console/**").permitAll()
