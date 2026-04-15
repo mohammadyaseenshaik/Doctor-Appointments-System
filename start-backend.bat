@@ -7,8 +7,8 @@ REM ============================================================
 echo.
 echo  ===== MedBook Backend Starting =====
 echo  Spring Boot 3 + H2 Database
-echo  API: http://localhost:8080
-echo  H2 Console: http://localhost:8080/h2-console
+echo  API: https://doctor-appointmentbackend.onrender.com
+echo  H2 Console: https://doctor-appointmentbackend.onrender.com/h2-console
 echo.
 echo  Demo Credentials:
 echo    Admin:   admin@hospital.com / admin123

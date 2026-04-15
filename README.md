@@ -17,8 +17,8 @@ cd backend
 java -jar target\appointment-1.0.0.jar
 
 ```
-Backend runs on: **http://localhost:8080**
-H2 Console (database UI): **http://localhost:8080/h2-console**
+Backend runs on: **https://doctor-appointmentbackend.onrender.com**
+H2 Console (database UI): **https://doctor-appointmentbackend.onrender.com/h2-console**
 
 ### 2. Start the Frontend
 ```bash

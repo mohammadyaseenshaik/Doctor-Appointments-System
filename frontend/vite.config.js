@@ -9,7 +9,7 @@ export default defineConfig({
     // Proxy API calls to Spring Boot backend (avoids CORS in dev)
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'https://doctor-appointmentbackend.onrender.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }

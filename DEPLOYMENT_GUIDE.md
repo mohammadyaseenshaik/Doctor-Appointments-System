@@ -144,7 +144,7 @@ git push -u origin main
 
 Update `frontend/src/api/axiosInstance.js` to use environment variable:
 ```javascript
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+const API_URL = import.meta.env.VITE_API_URL || 'https://doctor-appointmentbackend.onrender.com';
 ```
 
 ---

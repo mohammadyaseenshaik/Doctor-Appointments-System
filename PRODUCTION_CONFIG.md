@@ -36,7 +36,7 @@ baseURL: 'http://localhost:8080'
 
 To:
 ```javascript
-baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080'
+baseURL: import.meta.env.VITE_API_URL || 'https://doctor-appointmentbackend.onrender.com'
 ```
 
 **Why:** Allows dynamic API URL based on environment

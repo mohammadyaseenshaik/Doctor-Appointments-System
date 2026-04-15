@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * CorsConfig - Cross-Origin Resource Sharing configuration.
  * Allows the React frontend (localhost:5173 / localhost:3000) to make API calls
- * to the Spring Boot backend (localhost:8080).
+ * to the Spring Boot backend (https://doctor-appointmentbackend.onrender.com).
  *
  * In production: replace allowed origins with your actual domain.
  */
