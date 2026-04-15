@@ -14,7 +14,8 @@ A full-stack Doctor Appointment System built with **React 18** (frontend) and **
 ### 1. Start the Backend
 ```bash
 cd backend
-mvn spring-boot:run
+java -jar target\appointment-1.0.0.jar
+
 ```
 Backend runs on: **http://localhost:8080**
 H2 Console (database UI): **http://localhost:8080/h2-console**

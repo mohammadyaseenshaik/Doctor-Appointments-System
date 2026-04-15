@@ -56,14 +56,19 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- MySQL Connector (Production - uncomment to use MySQL) -->
-        <!--
+        <!-- MySQL Connector (Production) -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        -->
+
+        <!-- PostgreSQL (for Render/Railway/Heroku) -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
 
         <!-- JWT - API -->
         <dependency>

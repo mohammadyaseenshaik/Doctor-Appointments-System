@@ -8,7 +8,7 @@ import axios from 'axios'
  * - Response interceptor: handles 401 Unauthorized (auto-logout)
  */
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080',
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',

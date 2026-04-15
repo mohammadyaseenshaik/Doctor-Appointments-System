@@ -1,5 +1,6 @@
 package com.doctor.appointment.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -20,16 +21,15 @@ import java.util.List;
 @Configuration
 public class CorsConfig {
 
+    @Value("${cors.allowed.origins:http://localhost:5173,http://localhost:3000,http://localhost:4173}")
+    private String allowedOrigins;
+
     @Bean
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
 
-        // Allow specific origins (React dev servers)
-        config.setAllowedOrigins(Arrays.asList(
-                "http://localhost:5173",   // Vite dev server
-                "http://localhost:3000",   // Create React App
-                "http://localhost:4173"    // Vite preview
-        ));
+        // Allow specific origins (from environment variable or defaults)
+        config.setAllowedOrigins(Arrays.asList(allowedOrigins.split(",")));
 
         // Allow all standard HTTP methods
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
